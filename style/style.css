@@ -1,0 +1,127 @@
+@font-face {
+    src: url('../style/font/font-montserrat.woff');
+    font-family: 'Montserrat';
+}
+
+* {
+    font-family: 'Montserrat';
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    background: #1F1F1F;
+    color: #FFFFFF;
+}
+
+code {
+    font-family: monospace;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 1.15em;
+    color: #00ffd2;
+}
+
+a {
+    text-decoration: none;
+    color: #009F83;
+}
+
+.container {
+    margin: auto;
+    width: 85%;
+}
+
+.row { overflow: auto; }
+.col { float: left; }
+.size-1 { width: 8.33%; }
+.size-2 { width: 16.66%; }
+.size-3 { width: 25.00%; }
+.size-4 { width: 33.33%; }
+.size-5 { width: 41.66%; }
+.size-6 { width: 50.00%; }
+.size-7 { width: 58.33%; }
+.size-8 { width: 66.66%; }
+.size-9 { width: 75.00%; }
+.size-10 { width: 83.33%; }
+.size-11 { width: 91.66%; }
+.size-12 { width: 100.00%; }
+
+.title {
+    font-weight: normal;
+    text-align: center;
+    font-size: 1.5em;
+    color: #FFFFFF;
+    margin: 1.5em 0;
+}
+
+.card {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-bottom: 5px solid #009F83;
+    margin: 0em 1em 1em 1em;
+    background: #2F2F2F;
+    padding: 0.5em;
+}
+
+.card p {
+    font-size: 0.8em;
+    color: #FFF; 
+}
+
+.chapter {
+    margin-bottom: 1em;
+}
+
+.description {
+    margin-bottom: 0.8em;
+    margin-right: 0.6em;
+}
+
+.text {    
+    font-size: 0.8em;
+}
+
+.code-example, .code-result {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 0.5em;
+    padding: 0.7em;
+}
+.code-example {
+    border-left: 5px solid #009F83;
+    background: #2F2F2F;
+}
+.code-result {
+    border-left: 5px solid #FFF;
+    background: #009F83;
+    font-size: 0.8em;
+}
+
+.line {
+    border: 1px solid #5e5e5e;
+    margin-bottom: 1.6em;
+}
+
+::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+::-webkit-scrollbar-track {
+    background: #2F2F2F; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #009F83;
+    border-radius: 0.5em;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #00ffd2;
+}
+
+@media screen and (max-width: 800px) {
+    .description { margin-right: 0; }
+    .col { width: 100% !important; }
+    .container { width: 95%; }
+}
