@@ -12,8 +12,8 @@ Para ajudar o projeto com novos conteúdos:
 - Em seu Fork copie o arquivo ``contents\_example.html`` na mesma pasta.
 - Altere o nome da cópia para o nome do conteúdo que deseja incluir.
 - Com este arquivo aberto, adicione os conteúdos a ``const content``.
-- Por fim altere o arquivo ``_contents.js``:
-  - Adicione um novo objeto a lista informando ``link, name, description``.
-  - O ``link`` é nome do arquivo recém-criado em content.
+- Por fim altere o arquivo ``contents.js``:
+  - Adicione um novo objeto a lista informando ``id, name, description``.
+  - O ``id`` é nome do arquivo recém-criado em content.
   - O ``name`` é nome do conteúdo novo.
   - O ``description`` é uma breve descrição do conteúdo.
