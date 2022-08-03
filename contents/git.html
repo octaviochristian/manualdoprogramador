@@ -16,8 +16,31 @@
     <script>
       const content = [
         {
-            title : `Git`,
-            description : `Página reservada para o conteúdo sobre Git.`,
+            title : `O que é o Git?`,
+            description : `O Git é um sistema de controle de versões de código aberto (open source). O que isso significa? Ele é responsável por registrar o histórico de edições dos seus arquivos dentro de um projeto, também identifica as alterações que foram realizadas, os novos arquivos que foram incluídos, e possibilita a restauração uma versão anterior do projeto. Por conta disso ele se torna um grande amigo para qualquer programador. Claro que para aproveitar de suas funções, é necessário aprender a usa-lo em seus projetos, então vamos lá.`,
+        },
+        {
+            title : `Git x GitHub`,
+            description : `Tá, mas o que é o GitHub então? Mesmo com nomes parecidos, eles não são exatamente a mesma coisa. O GitHub é uma plataforma online de hospedagem de código-fonte, e também é uma rede social de programadores. É onde você guarda os códigos de seus projetos na internet, mas também é onde você pode compartilhar seus projetos com outras pessoas, e participar vários outros projetos. Além disso, o GitHub também possui um sistema de controle de versão interno. Resumindo:<br><br>
+            <li>Git: é o programa instalado no seu computador, que faz controle de versão de seus arquivos no seu computador, ou seja, sua pasta/repositório local.</li><li>GitHub: é uma plataforma online para hospedagem de códigos, que faz controle de versão na nuvem, ou seja, sua pasta/repositório remoto.</li><br>É recomendando que você crie uma conta no GitHub para usos futuros, o link para se cadastrar é <a href="https://github.com/signup" target="_blank">https://github.com/signup</a>.`,
+        },
+        {
+            title : `Instalando`,
+            description : `1. Realize o download do Git em <a href="https://git-scm.com/download/" target="_blank">https://git-scm.com/download/</a>.<br>2. Instale o Git baseado nas instruções da página de download.<br>3. Abra o cmd (no Windows) ou terminal (no macOS ou Linux)<br>4. Digite o comando <i>git version</i> para confirmar que deu tudo certo.`,
+            code_example : `git version`,
+            code_result : `git version 2.36.0.windows.1`,
+        },
+        {
+            title : `Configurando`,
+            description : `Uma vez instalado, é hora de configurar, vamos informar ao Git quem você é, porém nessa etapa é recomendado que você digite o nome e email usados no seu GitHub, pois assim sua identificação/perfil aparecerá nas suas modificações de projetos.<br><br>1. Digite o comando <i>git config --global user.name "Digite seu nome"</i><br>2. Digite o comando <i>git config --global user.email seuemail@provedor.com</i><br>3. Para verificar se os dados digitados estão corretos, basta digitar os comandos:<br>- <i>git config user.name</i><br>- <i>git config user.email</i>`,
+            code_example : `git config --global user.name "Seu Nome"\ngit config --global user.email seuemail@provedor.com\ngit config user.name\ngit config user.email`,
+            code_result : `user.email=seuemail@provedor.com\nuser.name=Seu Nome`,
+        },
+        {
+            title : `Novo Projeto Local`,
+            description : `Agora devidamente instalado e configurado, vamos colocar a mão na massa, vamos inicializar um novo projeto local (na sua maquina). <br>1. Crie uma pasta com o nome do seu projeto.<br>2. Abra essa pasta, cli`,
+            code_example : `git init`,
+            code_result : `Initialized empty Git repository in C:/Users/Usuario/Desktop/MeuProjeto/.git/`,
         },
     ];
     </script>
