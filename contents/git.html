@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
-    <!-- Digite abaixo o conteúdo da página: -->
     <script>
       const content = [
         {
@@ -43,10 +42,10 @@
             code_result : `Initialized empty Git repository in C:/Users/Usuario/Desktop/MeuProjeto/.git/`,
         },
         {
-            title : `Novo Projeto Remoto`,
-            description : `Também é possível criar um repositório`,
-            code_example : `git init`,
-            code_result : `Initialized empty Git repository in C:/Users/Usuario/Desktop/MeuProjeto/.git/`,
+            title : `Obtendo Projeto Remoto`,
+            description : `Também é possível obter um projeto de um repositório remoto. Este projeto por exemplo, ele pode ser clonado fácilmente com o comando <i>git clone</i> e o endereço do projeto no github, e o mesmo vale para o demais.`,
+            code_example : `git clone https://github.com/octaviochristian/manualdoprogramador`,
+            code_result : `Cloning into 'manualdoprogramador' ...`,
         },
         {
             title : `Incluindo Arquivos`,
@@ -59,9 +58,20 @@
         },
         {
             title : `Status do Projeto`,
-            description : `Simples mas poderoso, ele vai nos dizer como está a situação do nosso diretório, se todos os arquivos estão devidamente salvos, ou se existe arquivo novo, modificado, removido, etc... Aqui você consegue ver como está o seu projeto no momento.`,
+            description : `Simples mas poderoso, ele vai nos dizer como está a situação do nosso diretório, se todos os arquivos estão devidamente salvos, ou se existe algum novo, modificado, removido. Aqui você consegue ver qual a situação do seu projeto no momento.`,
             code_example : `git status`,
             code_result : `On branch main\nNo commits yet ...`,
+        },
+        {
+            title : `Criando uma Nova Versão`,
+            description : `Para cada versão do código é necessário incluir os arquivos que forem criados, ou foram alterados, mas isso você já sabe fazer usando o comando <i>git add</i>. Agora que está versão já está pronta é o momento de fazer um commit. Mas o que é isso? Ao fazer um commit estamos dizendo ao Git que essa versão do projeto está pronta e deve ser salva, e se no futuro ocorrer algum problema em nosso código, podemos voltar para ela.`,
+            code_example : `git commit -m 'descrição da nova versão'`,
+            code_result : `[main 79b470a] descrição da nova versão\n1 file changed, 0 insertion(+)`,
+        },
+        {
+            title : `Descrição para a Nova Versão`,
+            description : `Em um commit podemos digitar qualquer coisa como descrição, porém a maiorias dos projetos seguem um padrão para melhorar a organização e identificação das alterações realizadas em cada versão do código. Segue a estrutura deste padrão:<br><br>git commit -m "tipo (escopo opcional): descrição curta da versão"<br><br>Recomendo a leitura do <a href="https://www.conventionalcommits.org/pt-br/v1.0.0/" target="_blank">site oficial</a> do padrão de commits, e também do <a href="https://github.com/iuricode/padroes-de-commits" target="_black">repositório do iuricode</a>, onde você encontrará várias exemplos práticos para usar no seu dia-a-dia.`,
+            code_example : `fix: corrigido um bug/erro\nfeat: adicionado novo recurso\ndocs: documentação modificada\ntest: incluido testes ao projeto\nstyle: design do projeto alterado\nperf: código alterado para melhorar performace\nrefactor: código refeito mantendo funcionamento`,
         },
     ];
     </script>
