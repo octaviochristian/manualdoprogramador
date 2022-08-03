@@ -38,9 +38,30 @@
         },
         {
             title : `Novo Projeto Local`,
-            description : `Agora devidamente instalado e configurado, vamos colocar a mão na massa, vamos inicializar um novo projeto local (na sua maquina). <br>1. Crie uma pasta com o nome do seu projeto.<br>2. Abra essa pasta, cli`,
+            description : `Agora devidamente instalado e configurado, vamos colocar a mão na massa, vamos inicializar um novo projeto local (na sua maquina). <br>1. Crie uma pasta com o nome do seu projeto.<br>2. Abra essa pasta, clique com o botão direito dentro e abra o cmd/terminal.<br>3. Digite o comando <i>git init</i> e pronto, inicializamos o git neste repositório.`,
             code_example : `git init`,
             code_result : `Initialized empty Git repository in C:/Users/Usuario/Desktop/MeuProjeto/.git/`,
+        },
+        {
+            title : `Novo Projeto Remoto`,
+            description : `Também é possível criar um repositório`,
+            code_example : `git init`,
+            code_result : `Initialized empty Git repository in C:/Users/Usuario/Desktop/MeuProjeto/.git/`,
+        },
+        {
+            title : `Incluindo Arquivos`,
+            description : `Com o Git inicializado, agora precisamos dizer para ele quais os arquivos que ele tem que incluir no controle de versão. Para isso usamos o comando <i>git add</i>, junto ao nome do arquivo que você quer adicionar, ou com * que adiciona todos os arquivos da pasta.`,
+            code_example : `git add nomedoarquivo.extensao\ngit add *`,
+        },
+        {
+            title : `Ignorando Arquivos`,
+            description : `Em nossos projetos vezes vamos ter alguns arquivos irrelevantes gerados por programas, ou até mesmo arquivos sensiveis (como senhas ou chaves de apis), muitas das vezes elas não podem entrar no versionamento (controle de versão) dos nossos códigos, então para evitar que esses arquivos cheguem ao nosso repositório remoto podemos criar um arquivo chamado <b>.gitignore</b> dentro da pasta do projeto. Neste arquivo, a cada linha digitamos o nome de um arquivo que não queremos que vá para o repositório remoto.`,
+        },
+        {
+            title : `Status do Projeto`,
+            description : `Simples mas poderoso, ele vai nos dizer como está a situação do nosso diretório, se todos os arquivos estão devidamente salvos, ou se existe arquivo novo, modificado, removido, etc... Aqui você consegue ver como está o seu projeto no momento.`,
+            code_example : `git status`,
+            code_result : `On branch main\nNo commits yet ...`,
         },
     ];
     </script>
