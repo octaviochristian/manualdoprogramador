@@ -16,7 +16,7 @@
       const content = [
         {
             title : `O que é o Git?`,
-            description : `O Git é um sistema de controle de versões de código aberto (open source). O que isso significa? Ele é responsável por registrar o histórico de edições dos seus arquivos dentro de um projeto, também identifica as alterações que foram realizadas, os novos arquivos que foram incluídos, e possibilita a restauração uma versão anterior do projeto. Por conta disso ele se torna um grande amigo para qualquer programador. Claro que para aproveitar de suas funções, é necessário aprender a usa-lo em seus projetos, então vamos lá.`,
+            description : `O Git é um sistema de controle de versões de código aberto (open source). O que isso significa? Ele é responsável por registrar o histórico de edições dos seus arquivos dentro de um projeto, também identifica as alterações que foram realizadas, os novos arquivos que foram incluídos, e possibilita a restauração uma versão anterior do projeto. Por conta disso ele se torna um grande amigo para qualquer programador. Claro que para aproveitar de suas funções, é necessário aprender a usá-lo em seus projetos, então vamos lá.`,
         },
         {
             title : `Git x GitHub`,
@@ -37,13 +37,13 @@
         },
         {
             title : `Novo Projeto Local`,
-            description : `Agora devidamente instalado e configurado, vamos colocar a mão na massa, vamos inicializar um novo projeto local (na sua maquina). <br>1. Crie uma pasta com o nome do seu projeto.<br>2. Abra essa pasta, clique com o botão direito dentro e abra o cmd/terminal.<br>3. Digite o comando <i>git init</i> e pronto, inicializamos o git neste repositório.`,
+            description : `Agora devidamente instalado e configurado, vamos colocar a mão na massa, vamos inicializar um novo projeto local (na sua máquina). <br>1. Crie uma pasta com o nome do seu projeto.<br>2. Abra essa pasta, clique com o botão direito dentro e abra o cmd/terminal.<br>3. Digite o comando <i>git init</i> e pronto, inicializamos o git neste repositório.`,
             code_example : `git init`,
             code_result : `Initialized empty Git repository in C:/Users/Usuario/Desktop/MeuProjeto/.git/`,
         },
         {
             title : `Obtendo Projeto Remoto`,
-            description : `Também é possível obter um projeto de um repositório remoto. Este projeto por exemplo, ele pode ser clonado fácilmente com o comando <i>git clone</i> e o endereço do projeto no github, e o mesmo vale para o demais.`,
+            description : `Também é possível obter um projeto de um repositório remoto. Este projeto por exemplo, ele pode ser clonado facilmente com o comando <i>git clone</i> e o endereço do projeto no github, e o mesmo vale para o demais.`,
             code_example : `git clone https://github.com/octaviochristian/manualdoprogramador`,
             code_result : `Cloning into 'manualdoprogramador' ...`,
         },
@@ -54,11 +54,11 @@
         },
         {
             title : `Ignorando Arquivos`,
-            description : `Em nossos projetos vezes vamos ter alguns arquivos irrelevantes gerados por programas, ou até mesmo arquivos sensiveis (como senhas ou chaves de apis), muitas das vezes elas não podem entrar no versionamento (controle de versão) dos nossos códigos, então para evitar que esses arquivos cheguem ao nosso repositório remoto podemos criar um arquivo chamado <b>.gitignore</b> dentro da pasta do projeto. Neste arquivo, a cada linha digitamos o nome de um arquivo que não queremos que vá para o repositório remoto.`,
+            description : `Em nossos projetos vezes vamos ter alguns arquivos irrelevantes gerados por programas, ou até mesmo arquivos sensíveis (como senhas ou chaves de APIs), muitas das vezes elas não podem entrar no versionamento (controle de versão) dos nossos códigos, então para evitar que esses arquivos cheguem ao nosso repositório remoto podemos criar um arquivo chamado <b>.gitignore</b> dentro da pasta do projeto. Neste arquivo, a cada linha digitamos o nome de um arquivo que não queremos que vá para o repositório remoto.`,
         },
         {
             title : `Status do Projeto`,
-            description : `Simples mas poderoso, ele vai nos dizer como está a situação do nosso diretório, se todos os arquivos estão devidamente salvos, ou se existe algum novo, modificado, removido. Aqui você consegue ver qual a situação do seu projeto no momento.`,
+            description : `Simples, mas poderoso, ele vai nos dizer como está a situação do nosso diretório, se todos os arquivos estão devidamente salvos, ou se existe algum novo, modificado, removido. Aqui você consegue ver qual a situação do seu projeto no momento.`,
             code_example : `git status`,
             code_result : `On branch main\nNo commits yet ...`,
         },
@@ -70,8 +70,36 @@
         },
         {
             title : `Descrição para a Nova Versão`,
-            description : `Em um commit podemos digitar qualquer coisa como descrição, porém a maiorias dos projetos seguem um padrão para melhorar a organização e identificação das alterações realizadas em cada versão do código. Segue a estrutura deste padrão:<br><br>git commit -m "tipo (escopo opcional): descrição curta da versão"<br><br>Recomendo a leitura do <a href="https://www.conventionalcommits.org/pt-br/v1.0.0/" target="_blank">site oficial</a> do padrão de commits, e também do <a href="https://github.com/iuricode/padroes-de-commits" target="_black">repositório do iuricode</a>, onde você encontrará várias exemplos práticos para usar no seu dia-a-dia.`,
-            code_example : `fix: corrigido um bug/erro\nfeat: adicionado novo recurso\ndocs: documentação modificada\ntest: incluido testes ao projeto\nstyle: design do projeto alterado\nperf: código alterado para melhorar performace\nrefactor: código refeito mantendo funcionamento`,
+            description : `Em um commit podemos digitar qualquer coisa como descrição, porém a maiorias dos projetos seguem um padrão para melhorar a organização e identificação das alterações realizadas em cada versão do código. Segue a estrutura deste padrão:<br><br>git commit -m "tipo (escopo opcional): descrição curta da versão"<br><br>Recomendo a leitura do <a href="https://www.conventionalcommits.org/pt-br/v1.0.0/" target="_blank">site oficial</a> do padrão de commits, e também do <a href="https://github.com/iuricode/padroes-de-commits" target="_black">repositório do iuricode</a>, onde você encontrará vários exemplos práticos para usar no seu dia-a-dia.`,
+            code_example : `fix: corrigido um bug/erro\nfeat: adicionado novo recurso\ndocs: documentação modificada\ntest: incluido testes ao projeto\nstyle: design do projeto alterado\nperf: código alterado para melhorar performance\nrefactor: código refeito mantendo funcionamento`,
+        },
+        {
+            title : `Branches`,
+            description : `As branches nos permite criar ramificação em nosso código, para que o código original não seja alterado naquele momento. E como se tivéssemos criado uma copia do projeto para não editar a versão estável. As branches são importantes principalmente quando estamos trabalhando com adição de novos recursos, alterações críticas no código e outros. Por conta disso criamos uma branch nova, e assim conseguimos evitar problemas em nosso código principal até que a nova versão esteja pronta para ser mesclada a atual.`,
+        },
+        {
+            title : `Criando uma Branch`,
+            description : `Para criar uma branch é simples, basta digitar o comando <i>git branch</i> com o nome sua escolha. Note que é necessário com que todas as palavras estejam unidas.`,
+            code_example : `git branch nomedabranch`,
+        },
+        {
+            title : `Listagem de Branches`,
+            description : `Para visualizar todas as ramificações do seu código vamos usar o comando <i>git branch</i>, ele retorna a lista completa. Note que existe um asterisco na frente de uma branch, ele indica em qual branch que você está neste momento.`,
+            code_example : `git branch`,
+            code_result : `* main\nnomedabranch`,
+        },
+        {
+            title : `Alternando entre Branches`,
+            description : `Para alternar entre as ramificações, vamos usar o comando <i>git checkout</i> junto ao nome da branch que você quer acessar. Você pode conferir se deu certo com a mensagem que vai aparecer, ou também usar o comando <i>git branch</i> para se certificar disso.`,
+            code_example : `git checkout nomedabranch`,
+            code_result : `Switched to branch 'nomedabranch'`,
+        },
+        {
+            title : `Mesclando Branches`,
+            description : `Quando terminamos de trabalhar em uma branch, e precisamos coloca-la no projeto principal, nos mesclamos as branches usando o comando <i>git merge</i> com o nome da branch que vai fornecer a atualização do código, e isso gera automaticamente uma nova versão (commit) do código. Existem 2 pontos a se observar:<li>Você precisa está na branch que vai receber a atualização, ou seja, a branch main.</li><li>Mesmo mesclando as branches, elas continuam coexistindo.</li>`,
+            code_example : `git merge nomedabranch`,
+            code_result : `Updating 79b470a..3de620c\nFast-forward\nindex.html | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)`,
         },
     ];
     </script>
